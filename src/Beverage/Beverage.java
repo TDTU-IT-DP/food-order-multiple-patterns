@@ -1,6 +1,6 @@
 package Beverage;
 public interface Beverage{
     public String getDescription();
-    public double getCost();
+    public double cost();
     public void prepareBeverage();
 }
