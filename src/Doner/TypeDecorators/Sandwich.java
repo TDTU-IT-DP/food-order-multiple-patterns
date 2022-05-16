@@ -2,7 +2,6 @@ package Doner.TypeDecorators;
 
 import Doner.Doner;
 import Doner.TypeDecorator;
-import KidMenu.KidMenu;
 
 public class Sandwich extends TypeDecorator {
     Doner doner;
