@@ -3,10 +3,10 @@ package Meatball.SaladDecorators;
 import Meatball.Meatball;
 import Meatball.SaladDecorator;
 
-public class OnlyTomate extends SaladDecorator {
+public class OnlyTomato extends SaladDecorator {
     Meatball meatball;
 
-    public OnlyTomate(Meatball meatball){
+    public OnlyTomato(Meatball meatball){
         this.meatball = meatball;
     }
 
