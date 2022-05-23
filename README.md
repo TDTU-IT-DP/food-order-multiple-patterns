@@ -107,7 +107,7 @@ Project sử dụng phiên bản `Java 8` làm môi trường thực thi mã ngu
 
 - Truy cập đường dẫn đến source code [tại đây](https://github.com/TDTU-IT-DP/food-order-multiple-patterns)
 - Click vào `Code` -> Chọn `DOWNLOAD ZIP` 
-- Sau khi đã tải tập tin nén có chứ source code ta bấm `chuột phải` vào tập tin -> chọn `Extract file "food-order-multiple-patterns.zip"`
+- Sau khi đã tải tập tin nén có chứa source code ta bấm `chuột phải` vào tập tin -> chọn `Extract file "food-order-multiple-patterns.zip"`
 - Sau đó ta sẽ được 1 thư mục có tên **"food-order-multiple-patterns"** click `chuột phải` vào thư mục -> chọn `Open with Visual Studio Code`
 - Sau khi đã mở thành công thư mục ta tìm tập tin **Client.java** theo đường dẫn `/src/Client.java` -> Click `Run` để chạy tập tin này.
 
@@ -212,6 +212,7 @@ public abstract class HotBeverage implements Beverage {
 Factory Method Design Pattern hay gọi ngắn gọn là Factory Pattern là một trong những Pattern thuộc nhóm Creational Design Pattern. Nhiệm vụ của Factory Pattern là quản lý và trả về các đối tượng theo yêu cầu, giúp cho việc khởi tạo đổi tượng một cách linh hoạt hơn.
 
 #### Cài đặt Factory Method
+![Factory method](/assets/factory.png)
 - Để cài đặt Factory method đầu tiên ta cần một super class (trong sơ đồ là Product). Class này có thể là một interface hoặc abstract class thể hiện tính chất chung cho tất cả các đối tượng được tạo ra bởi Factory class và lớp con của nó.
 - Sub class hay có thể gọi là Concrete class là những sự hiện thực khác nhau của super class. Các lớp này sẽ implement các phương thức của super class theo nghiệp vụ riêng của nó
 - Factory class (trong sơ đồ gọi là Creator): là class chịu trách nhiệm khởi tạo các đối tượng sub class dựa theo tham số đầu vào. Lớp này có thể là một Singleton hoặc cung cấp một public static method cho việc truy nhập và khởi tạo đối tượng. Class này thường sử dụng các câu lệnh điều kiện như if – else hoặc switch – case để xác định class con đầu ra.
@@ -287,6 +288,7 @@ public class HotBeverageFactory implements BeverageFactory{
 Command Pattern là một trong những Pattern thuộc nhóm hành vi (Behavior Pattern). Nó cho phép chuyển yêu cầu thành đối tượng độc lập, có thể được sử dụng để tham số hóa các đối tượng với các yêu cầu khác nhau như log, queue (undo/redo), transtraction.
 
 #### Cài đặt Command Pattern
+![Command](/assets/command.png)
 Các thành phần cơ bản tham gia trong Command Pattern:
 - Command : là một interface hoặc abstract class, chứa một phương thức trừu tượng thực thi (execute) một hành động (operation). Request sẽ được đóng gói dưới dạng Command.
 - ConcreteCommand : là các implementation của Command. Định nghĩa một sự gắn kết giữa một đối tượng Receiver và một hành động. Thực thi execute() bằng việc gọi operation đang hoãn trên Receiver. Mỗi một ConcreteCommand sẽ phục vụ cho một case request riêng.
@@ -525,8 +527,8 @@ public class Cook {
 Decorator pattern là một trong những Pattern thuộc nhóm cấu trúc (Structural Pattern). Nó cho phép người dùng thêm chức năng mới vào đối tượng hiện tại mà không muốn ảnh hưởng đến các đối tượng khác. Kiểu thiết kế này có cấu trúc hoạt động như một lớp bao bọc (wrap) cho lớp hiện có. Mỗi khi cần thêm tính năng mới, đối tượng hiện có được wrap trong một đối tượng mới (decorator class).
 
 #### Cài đặt Decorator Pattern
+![Decorator](/assets/decorator.png)
 Những thành phần trong mẫu thiết kế Decorator:
-
 - Component: giao diện (interface) chung để các đối tượng cần thêm chức năng trong quá trình chạy thì triển khai giao diện này.
 - ConcreteComponent : Một cài đặt cho giao diện Component mà nó định nghĩa một đối tượng cần thêm các chức năng trong quá trình chạy.
 - Decorator : một lớp trừu tượng dùng để duy trì một tham chiếu của đối tượng thành phần và đồng thời cài đặt các thành phần của giao diện.
