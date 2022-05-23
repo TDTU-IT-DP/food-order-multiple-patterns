@@ -590,10 +590,3 @@ public class Hamburger extends TypeDecorator {
     }
 }
 ```
-# 5. Nguồn tham khảo
-https://toihocdesignpattern.com/
-https://gpcoder.com/4686-huong-dan-java-design-pattern-command/
-https://gpcoder.com/4574-huong-dan-java-design-pattern-decorator/
-https://gpcoder.com/4365-huong-dan-java-design-pattern-abstract-factory/
-https://gpcoder.com/4810-huong-dan-java-design-pattern-template-method/
-https://github.com/Scankiran/UstaDonerciDesignPattern?fbclid=IwAR0gToYtdGoni6ME5lOVNsFVfybulFYn5njm2GK_9tlq2csPmvk7flocUUc
