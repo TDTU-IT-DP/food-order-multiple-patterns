@@ -5,7 +5,7 @@
 <br>
 <div align="center">
   <a href="https://github.com/TDTU-IT-DP/food-order-multiple-patterns">
-    <img src="assets/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/logo.jpg" alt="Logo" width="80" height="80">
   </a>
   <h1 align="center">BÀI TIỂU LUẬN</h1>
    <h3>Ứng dụng Gọi món ăn áp dụng Design Pattern</h3>
@@ -125,7 +125,7 @@ Project sử dụng phiên bản `Java 8` làm môi trường thực thi mã ngu
 
 #### Cài đặt Template Method
 
-![Template method](/assets/template.jpg)
+![Template method](/assets/template.png)
 
 - Để cài đặt Template method đầu tiên ta cần một lớp abstract định nghĩa một khung các bước thực hiện để giải quyết một bài toán (Operation1(), Operation2(), ...) và một phương thức dùng để quy định thứ tự thực hiện của các phương thức đó (templateMethod()). 
 - Các phương thức abstract sẽ được các subclass cung cấp việc triển khai các hành động. 
